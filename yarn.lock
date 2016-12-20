@@ -2088,9 +2088,19 @@ inferno-compat@beta35:
     inferno-transition-group "1.1.0"
     rc-css-transition-group "2.1.4"
 
+inferno-component@1.0.0-beta32:
+  version "1.0.0-beta32"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.0.0-beta32.tgz#2bb0aac933c5033b186d809816e158f58a2590ed"
+  dependencies:
+    inferno "1.0.0-beta32"
+
 inferno-transition-group@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/inferno-transition-group/-/inferno-transition-group-1.1.0.tgz#7f7cb800530e7b3d1b6d3867c87a3d6ec50aa003"
+
+inferno@1.0.0-beta32:
+  version "1.0.0-beta32"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.0.0-beta32.tgz#bd216a5117280da4a15ebcc4b4e1faf3603afc0d"
 
 inferno@1.0.0-beta35:
   version "1.0.0-beta35"

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import Inferno from 'inferno';
+import Component from 'inferno-component';
 
 export default class Counter extends Component {
   constructor(props) {
@@ -6,24 +7,23 @@ export default class Counter extends Component {
     this.state = { counter: 0 };
   }
 
-  componentDidMount() {
+  onComponentDidMount() {
     this.interval = setInterval(this.tick.bind(this), 1000);
   }
 
   tick() {
     this.setState({
-      counter: this.state.counter + 1
+      counter: this.state.counter + 1,
     });
   }
 
-  componentWillUnmount() {
+  onComponentWillUnmount() {
     clearInterval(this.interval);
   }
 
   render() {
     return (
       <h2>Counter: {this.state.counter}</h2>
-   );
+    );
   }
 }
-

@@ -1,4 +1,4 @@
-import React from 'react';
+import Inferno from 'inferno';
 
 export default function Layout({ children }) {
   return (
@@ -6,5 +6,5 @@ export default function Layout({ children }) {
       <h1>Hello, world!</h1>
       {children}
     </div>
-  )
+  );
 }

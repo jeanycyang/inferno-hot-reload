@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
-    "start": "node server.js",
+    "start": "NODE_ENV=development node server.js",
     "lint": "eslint src"
   },
   "repository": {
@@ -48,5 +48,8 @@
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "inferno": "1.0.0-beta32",
+    "inferno-component": "1.0.0-beta32"
+  }
 }

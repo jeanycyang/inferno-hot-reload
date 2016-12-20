@@ -14,14 +14,13 @@ module.exports = {
     publicPath: '/static/',
   },
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
   ],
   module: {
     rules: [{
       test: /\.jsx?$/,
-      user: ['react-hot-loader/webpack', 'babel-loader'],
+      use: ['babel-loader'],
       exclude: /node_modules/,
       include: path.join(__dirname, 'src'),
     }],
